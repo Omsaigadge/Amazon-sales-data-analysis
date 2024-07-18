@@ -4,9 +4,9 @@ This project uses SQL for analyzing Amazon sales data. The project is divided in
 ## Project Structure
 
 ### Data File
-['amazon_sales.csv'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/amazon_sales.csv) file contains the raw data containing around 1500 records. This was downloaded from Kaggle, from a dataset named [Amazon-sales-dataset](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset) 
+['amazon_sales.csv'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/amazon_sales.csv) file contains the raw data containing around 1500 records. This was downloaded from Kaggle, from a dataset named [Amazon-sales-dataset](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset).
 
-These are the columns present in the dataset
+These are the columns present in the dataset:
 | 	Column name	 | 	Datatype	 | 
 | 	:-----:	 | 	:-----:	 | 
 | 	product_id	| 	varchar	| 
@@ -26,32 +26,32 @@ These are the columns present in the dataset
 |   product_link|varchar|
 
 ### SQL Script
-- ['create_script_sales_data.sql']() : Script for creating the database table and loading the data from amazon_sales.csv into it.
+- ['create_script_sales_data.sql'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/create_script_sales_data.sql) : Script for creating the database table and loading the data from amazon_sales.csv into it.
 - [table_operations.sql](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/table_operations.sql) : Script for cleaning, processing, and standardizing the data in the database.
 - [sales_data_queries_and_analysis.sql](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/sales_data_queries_and_analysis.sql) : Script containing various queries for analyzing the sales data.
 
 ## Database and Tools
-- PostgreSQL (Any other suitable database can be used. This was used because it was open-source and I have worked on it previously). This can be downloaded here--[PostgreSQL](https://www.postgresql.org/download/)
-- PgAdmin4
+- PostgreSQL (Any other suitable database can be used. This was used because it was open-source and I have worked on it previously). This can be downloaded here--[PostgreSQL](https://www.postgresql.org/download/).
+- PgAdmin4.
 
 ## Project explanation
 - Creating the database
-  - Run the file ['create_script_sales_data.sql']().
+  - Run the file ['create_script_sales_data.sql'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/create_script_sales_data.sql).
   - This creates the required table named 'sales_data', and loads data into the table.
 - Cleaning and processing the data. Run the ['table_operations.sql'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/table_operations.sql) script to clean, process, and standardize the data. This script includes operations such as:
-    - Removing duplicates
-    - Removing null values and handling missing values
-    - Removing unnecessary columns in the data
-    - Changing the column datatypes of columns to required datatype
-    - Merging columns
-    - Extracting only relevant data from the columns
+    - Removing duplicates.
+    - Removing null values and handling missing values.
+    - Removing unnecessary columns in the data.
+    - Changing the column datatypes of columns to required datatype.
+    - Merging columns.
+    - Extracting only relevant data from the columns.
 - Analyzing the data. Run the ['sales_data_queries_and_analysis.sql'](https://github.com/Omsaigadge/Amazon-sales-data-analysis/blob/main/sales_data_queries_and_analysis.sql), which contains a  collection of SQL queries designed to analyze the sales data.
  
 ## Key observations tracked in the analysis
-- Total sales based on category of the products
-- Top-selling products
-- Customer purchase behaviour
-- Impact of discounts on ratings and sales
-- Customer demographics
+- Total sales based on category of the products.
+- Top-selling products.
+- Customer purchase behaviour.
+- Impact of discounts on ratings and sales.
+- Customer demographics.
 
 
